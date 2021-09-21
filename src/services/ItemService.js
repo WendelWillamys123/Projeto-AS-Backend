@@ -2,13 +2,13 @@ const ItemData = require ("../database/ItemData");
 const RoleData = require ("../database/RoleData");
 const TimeData = require ("../database/TimeData");
 
-const ItemData = new ItemData();
-const RoleData = new RoleData();
-const TimeData = new TimeData();
+const itemData = new ItemData();
+const roleData = new RoleData();
+const timeData = new TimeData();
 
-const Item = ItemData.getItem();
-const Role = RoleData.getRole();
-const Time = TimeData.getTime();
+const Item = itemData.getItem();
+const Role = roleData.getRole();
+const Time = timeData.getTime();
 
 class ItemService {
 

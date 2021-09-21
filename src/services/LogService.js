@@ -1,7 +1,7 @@
 const LogData = require ("../database/LogData");
 
-const LogData = new LogData();
-const Log = LogData.getLog();
+const logData = new LogData();
+const Log = logData.getLog();
 
 class LogService {
 

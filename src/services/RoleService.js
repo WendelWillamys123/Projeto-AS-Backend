@@ -3,15 +3,15 @@ const GroupData = require ("../database/GroupData");
 const RoleData = require ("../database/RoleData");
 const TimeData = require ("../database/TimeData");
 
-const UserData = new UserData();
-const GroupData = new GroupData();
-const RoleData = new RoleData();
-const TimeData = new TimeData();
+const userData = new UserData();
+const groupData = new GroupData();
+const roleData = new RoleData();
+const timeData = new TimeData();
 
-const User = UserData.getUser();
-const Group = GroupData.getGroup();
-const Role = RoleData.getRole();
-const Time = TimeData.getTime();
+const User = userData.getUser();
+const Group = groupData.getGroup();
+const Role = roleData.getRole();
+const Time = timeData.getTime();
 
 const {addToMonitorsByRole, removeFromMonitorsByRole} = require ("../managers/monitorManager");
 const {addToSchedulesByRole, removeFromSchedulesByRole} = require ("../managers/scheduleManager");

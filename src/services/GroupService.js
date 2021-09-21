@@ -1,11 +1,11 @@
 const GroupData = require ("../database/GroupData");
 const ItemData = require ("../database/ItemData");
 
-const GroupData = new GroupData();
-const ItemData = new ItemData();
+const groupData = new GroupData();
+const itemData = new ItemData();
 
-const Group = GroupData.getGroup();
-const Item = ItemData.getItem();
+const Group = groupData.getGroup();
+const Item = itemData.getItem();
 
 const {addToMonitorsByGroup, removeFromMonitorsByGroup} = require ("../managers/monitorManager");
 
@@ -24,8 +24,7 @@ class GroupService {
     }
 
     async store (name, lastParent, roles, usedTimes, owner) {
-
-        const group = await Group.findOne({email});
+        
         const parent = await Group.findById(lastParent).lean ();
         var parents = parent.parents.concat (lastParent);
         const newGroup = await Group.create ({name, parents, roles, usedTimes, owner});

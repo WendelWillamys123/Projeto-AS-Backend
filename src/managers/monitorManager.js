@@ -1,4 +1,3 @@
-const io = require ("./websocketManager");
 const Account = require ("../models/Account");
 const User = require ("../models/User");
 const Group = require ("../models/Group");

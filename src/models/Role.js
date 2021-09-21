@@ -11,4 +11,4 @@ const RoleSchema = new mongoose.Schema
 );
 
 RoleSchema.plugin (mongoosePaginate);
-module.exports = mongoose.model ("Role", RoleSchema);
+module.exports =  RoleSchema;

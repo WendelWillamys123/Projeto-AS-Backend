@@ -15,4 +15,4 @@ const LogSchema = new mongoose.Schema
 );
 
 LogSchema.plugin (mongoosePaginate);
-module.exports = mongoose.model ("Log", LogSchema);
+module.exports = LogSchema;

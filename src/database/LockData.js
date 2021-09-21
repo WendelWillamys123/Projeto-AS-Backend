@@ -1,11 +1,15 @@
 const mongoose = require ("mongoose");
-const LockSchema= require ("../models/Lock");
+var LockSchema= require ("../models/Lock");
+const ItemData = require ("./ItemData");
 
-const Lock = mongoose.model ("Lock", LockSchema);
+const itemData = new ItemData();
+const Item = itemData.getItem();
+
+LockSchema = Item.discriminator ("Lock", LockSchema);
 
 class LockData {
     getLock () {
-        return Lock;
+        return LockSchema;
     }
 }
 

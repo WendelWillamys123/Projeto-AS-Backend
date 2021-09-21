@@ -1,5 +1,4 @@
 const mqtt = require ("mqtt");
-const io = require ("./websocketManager");
 const {accessMonitors} = require ("./monitorManager");
 const User = require ("../models/User");
 const Group = require ("../models/Group");

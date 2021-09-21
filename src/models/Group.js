@@ -9,4 +9,4 @@ const GroupSchema = new mongoose.Schema
     }
 );
 
-module.exports = Item.discriminator ("Group", GroupSchema);
+module.exports = GroupSchema;

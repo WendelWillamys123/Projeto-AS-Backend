@@ -1,7 +1,7 @@
 const TimeData = require ("../database/TimeData");
 
-const TimeData = new TimeData();
-const Time = TimeData.getTime();
+const timeData = new TimeData();
+const Time = timeData.getTime();
 
 class TimeService {
 

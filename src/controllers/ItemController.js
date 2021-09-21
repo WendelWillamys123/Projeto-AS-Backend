@@ -53,4 +53,4 @@ const itemRoutes = Router();
         response.json (item);
     });
 
-module.exports = itemService;
+module.exports = itemRoutes;

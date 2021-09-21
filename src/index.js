@@ -49,5 +49,4 @@ app.listen (3333);
 
 module.exports = app;
 
-// const io = require ("./managers/websocketManager");
 const client = require ("./managers/accessManager");

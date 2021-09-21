@@ -2,13 +2,13 @@ const GroupData = require ("../database/GroupData");
 const LockData = require ("../database/LockData");
 const ItemData = require ("../database/ItemData");
 
-const GroupData = new GroupData();
-const LockData = new LockData();
-const ItemData = new ItemData();
+const groupData = new GroupData();
+const lockData = new LockData();
+const itemData = new ItemData();
 
-const Group = GroupData.getGroup();
-const Item = ItemData.getItem();
-const Lock = LockData.getLock();
+const Group = groupData.getGroup();
+const Item = itemData.getItem();
+const Lock = lockData.getLock();
 
 const {addToMonitorsByLock, removeFromMonitorsByLock} = require ("../managers/monitorManager");
 

@@ -1,5 +1,5 @@
 const mongoose = require ("mongoose");
-const AccountSchema= require ("../models/Account");
+const AccountSchema = require ("../models/Account");
 
 const Account = mongoose.model ("Account", AccountSchema);
 

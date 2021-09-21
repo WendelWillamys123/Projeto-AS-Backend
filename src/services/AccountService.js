@@ -6,21 +6,21 @@ const RoleData = require ("../database/RoleData");
 const TimeData = require ("../database/TimeData");
 const LogData = require ("../database/LogData");
 
-const AccountData = new AccountData();
-const UserData = new UserData();
-const GroupData = new GroupData();
-const LockData = new LockData();
-const RoleData = new RoleData();
-const TimeData = new TimeData();
-const LogData = new LogData();
+const accountData = new AccountData();
+const userData = new UserData();
+const groupData = new GroupData();
+const lockData = new LockData();
+const roleData = new RoleData();
+const timeData = new TimeData();
+const logData = new LogData();
 
-const Account = AccountData.getAccount();
-const User = UserData.getUser();
-const Group = GroupData.getGroup();
-const Lock = LockData.getLock();
-const Role = RoleData.getRole();
-const Time = TimeData.getTime();
-const Log = LogData.getLog();
+const Account = accountData.getAccount();
+const User = userData.getUser();
+const Group = groupData.getGroup();
+const Lock = lockData.getLock();
+const Role = roleData.getRole();
+const Time = timeData.getTime();
+const Log = logData.getLog();
 
 const {addToMonitorsByAccount, removeFromMonitorsByAccount} = require ("../managers/monitorManager");
 

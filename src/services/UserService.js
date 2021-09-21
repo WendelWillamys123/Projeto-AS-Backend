@@ -1,7 +1,7 @@
 const UserData = require ("../database/UserData");
 
-const UserData = new UserData();
-const User = UserData.getUser();
+const userData = new UserData();
+const User = userData.getUser();
 
 const {addToMonitorsByUser, removeFromMonitorsByUser} = require ("../managers/monitorManager");
 

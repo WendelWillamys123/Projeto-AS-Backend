@@ -9,4 +9,4 @@ const AccountSchema = new mongoose.Schema
     }
 );
 
-module.exports = mongoose.model ("Account", AccountSchema);
+module.exports = AccountSchema;

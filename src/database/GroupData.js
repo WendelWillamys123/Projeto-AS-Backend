@@ -1,11 +1,15 @@
 const mongoose = require ("mongoose");
-const GroupSchema= require ("../models/Group");
+var GroupSchema = require ("../models/Group");
+const ItemData = require ("./ItemData");
 
-const Group = mongoose.model ("Group", GroupSchema);
+const itemData = new ItemData();
+const Item = itemData.getItem();
+
+GroupSchema = Item.discriminator ("Group", GroupSchema);
 
 class GroupData {
     getGroup () {
-        return Group;
+        return GroupSchema;
     }
 }
 

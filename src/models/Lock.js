@@ -8,4 +8,4 @@ const LockSchema = new mongoose.Schema
     }
 );
 
-module.exports = Item.discriminator ("Lock", LockSchema);
+module.exports = LockSchema;
